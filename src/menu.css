@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "f1Font";
+}
+
+:root {
+  --cor-primaria: #e10600;
+  --cor-secundaria: #ea514c;
+  --cor-fundo: #f1f1f1;
+  --cor-texto: #0e0e0e;
+  --cor-bg-header: #252525;
+}
+
+@font-face {
+  font-family: "f1Font";
+  src: url("font/Formula1-Regular_web_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "f1FontBold";
+  src: url(font/Formula1-Bold_web_0.ttf) format("truetype");
+}
+
+body {
+  background-color: var(--cor-texto);
+}
+
+header img {
+  width: 6rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  background-color: var(--cor-bg-header);
+}
+
+#search {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 1.25rem;
+  left: 22rem;
+}
+
+#menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 1.25rem;
+  right: 22rem;
+}
+
+.begning h1 {
+  color: var(--cor-fundo);
+  font-family: "f1FontBold";
+}
+
+.begning {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#red {
+  color: var(--cor-primaria);
+}
+
+.title {
+  margin: 4rem;
+}
+
+.title h3 {
+  color: var(--cor-fundo);
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.title ul {
+  color: var(--cor-fundo);
+  font-size: 0.7rem;
+  margin: 1rem;
+}
+
+#grid {
+  width: 40rem;
+  border-radius: 0.75rem;
+}
