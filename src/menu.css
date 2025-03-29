@@ -3,6 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "f1Font";
+  p,
+  h1,
+  h3 {
+    color: var(--cor-fundo);
+  }
+  .red {
+    color: var(--cor-primaria);
+  }
 }
 
 :root {
@@ -90,4 +98,81 @@ header {
 #grid {
   width: 40rem;
   border-radius: 0.75rem;
+}
+
+#hamilton {
+  width: 40rem;
+  border-radius: 0.75rem;
+}
+
+.secTwo {
+  margin: 4rem;
+  display: flex;
+}
+
+.secTwoInfo {
+  margin: 4rem;
+}
+
+.secTwoInfo h3 {
+  color: var(--cor-fundo);
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.secTwoInfo p {
+  font-size: 0.7rem;
+  margin: 1rem;
+}
+
+.howGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.how {
+  display: flex;
+  justify-content: center;
+}
+
+.centerRed {
+  display: flex;
+  justify-content: center;
+}
+
+.centerRed h1 {
+  font-size: 4rem;
+}
+
+.hgtitle {
+  margin: 6rem;
+}
+
+.carousel {
+  margin: 4rem;
+  width: 80rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  width: 50rem;
+  animation: slide 6s infinite;
+}
+
+.carousel-container img {
+  width: 50rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
