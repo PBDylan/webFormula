@@ -149,8 +149,9 @@ header {
 }
 
 .carousel {
+  position: relative;
   margin: 4rem;
-  width: 80rem;
+  width: 50rem;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -158,21 +159,58 @@ header {
 .carousel-container {
   display: flex;
   width: 50rem;
-  animation: slide 6s infinite;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .carousel-container img {
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
+  height: 500px;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  33% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+.carousel-container img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.teams {
+  position: relative;
+  top: 25rem;
+  width: 40%;
+  margin: 4rem;
+}
+
+.teams h1 {
+  color: var(--cor-primaria);
+}
+
+.hgall {
+  display: flex;
 }
